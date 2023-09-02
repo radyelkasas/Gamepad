@@ -1,0 +1,375 @@
+html {
+    scroll-behavior: smooth;
+}
+.head {
+    background-color: #333a44;
+    width: 100%;
+    height: 40px;
+}
+nav .navbar-nav .nav-item .nav-link:hover {
+    color: #3498db;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+}
+.navbar .navbar-toggler {
+    color: white;
+    font-size: 25px;
+    border-color: white;
+}
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+    border-color: none;
+    justify-content: center;
+}
+/* End NavBar */
+/* Start Landing */
+.landing {
+    background-image: url('../images/banner-bg.png');
+    width: 100%;
+    height: 100%;
+}
+.landing .carousel-inner .carousel-item .row {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+/* Button Shop Now */
+.button2 {
+    display: inline-block;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    box-shadow: 6px 6px 12px #c5c5c5,
+    -6px -6px 12px #ffffff;
+}
+.button2:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+    inset -4px -4px 12px #ffffff;
+}
+.button2:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+.button2:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #333a44;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+.button2:hover {
+    color: #ffffff;
+    border: 1px solid #333a44;
+}
+.button2:hover:before {
+    top: -35%;
+    background-color: #333a44;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+.button2:hover:after {
+    top: -45%;
+    background-color: #333a44;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+/* Button See More */
+.our-products .button {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #2c9caf;
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid #2c9caf;
+}
+
+.our-products button:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid #70bdca;
+    box-shadow: 4px 5px 17px -4px #268391;
+}
+.our-products button::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #2c9caf;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+}
+
+.our-products button:hover::before {
+    width: 250%;
+}
+/* Start Video Game */
+.video-game {
+    background-image: url('../images/video-bg.png');
+}
+/* End Video Game */
+/* Start Remot Control */
+.remot-control .container .card {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: 0px 0px 8px 1px #0072ff;
+}
+.remot-control .container .card .container .row img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.remot-control .container .card .container .row span {
+    color: #0072ff;
+}
+.remot-control .button {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #2c9caf;
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid #2c9caf;
+}
+
+.remot-control button:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid #70bdca;
+    box-shadow: 4px 5px 17px -4px #268391;
+}
+.remot-control button::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #2c9caf;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+}
+
+.remot-control button:hover::before {
+    width: 250%;
+}
+/* End Remot Control */
+/* Start Contact US */
+.contact-us form input:not(.submit),
+.contact-us form textarea {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #333a4485;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+.contact-us form textarea {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #333a4485;
+    font-size: 20px;
+}
+
+
+.contact-us form .submit {
+    border: none;
+    outline: none;
+    background-color: #0072ff;
+    width: 200px;
+    height: 60px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 4px;
+    transition: 0.8s ease-in-out all;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    -webkit-transition: 0.8s ease-in-out all;
+    -moz-transition: 0.8s ease-in-out all;
+    -ms-transition: 0.8s ease-in-out all;
+    -o-transition: 0.8s ease-in-out all;
+}
+
+.contact-us form .submit:hover {
+    letter-spacing: 0px;
+    background-color: white;
+    color: #0072ff;
+}
+/* End Contact US */
+/* Start Footer */
+.footer {
+    background-color: rgb(41, 40, 40);
+}
+.footer .row .second ul {
+    list-style: none;
+}
+.footer .row .second ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.8s ease-in-out all;
+    -webkit-transition: 0.8s ease-in-out all;
+    -moz-transition: 0.8s ease-in-out all;
+    -ms-transition: 0.8s ease-in-out all;
+    -o-transition: 0.8s ease-in-out all;
+}
+.footer .row .second ul a:hover {
+    color: #0072ff;
+}
+.footer .row .fourth input {
+    border: none;
+    outline: none;
+    height: 45px;
+    font-size: 18px;
+    padding-left: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.footer .row .fourth button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+}
+
+.footer .row .fourth button {
+    --primary-color: white;
+    --hovered-color: #c84747;
+    position: relative;
+    display: flex;
+    font-weight: 600;
+    font-size: 20px;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.footer .row .fourth button p {
+    margin: 0;
+    position: relative;
+    font-size: 20px;
+    color: var(--primary-color)
+}
+
+.footer .row .fourth button::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background: var(--hovered-color);
+    height: 2px;
+    transition: 0.3s ease-out;
+}
+
+.footer .row .fourth button p::before {
+    position: absolute;
+    content: "Subscribe";
+    width: 0%;
+    inset: 0;
+    color: var(--hovered-color);
+    overflow: hidden;
+    transition: 0.3s ease-out;
+}
+
+.footer .row .fourth button:hover::after {
+    width: 100%;
+}
+
+.footer .row .fourth button:hover p::before {
+    width: 100%;
+}
+
+.footer .row .fourth button:hover svg {
+    transform: translateX(4px);
+    color: var(--hovered-color)
+}
+
+.footer .row .fourth button svg {
+    color: var(--primary-color);
+    transition: 0.2s;
+    position: relative;
+    width: 15px;
+    transition-delay: 0.2s;
+}
+.footer .container .line {
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff4d;
+}
+.footer .container .media ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .container .media ul i {
+    font-size: 30px;
+    color: white;
+}
+.footer .copyright {
+    background-color: #0072ff;
+    font-size: 20px;
+    color: white;
+    overflow: hidden;
+}
+.footer .copyright a {
+    text-decoration: none;
+    color: white;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+}
+.footer .copyright a:hover {
+    color: black;
+}
+/* End Footer */
+
